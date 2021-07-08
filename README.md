@@ -53,7 +53,7 @@ If you find *prepBioCyc* useful in your research, please consider citing this re
 - M. A. Basher, Abdur Rahman, McLaughlin, Ryan J., and Hallam, Steven J.. **["Metabolic pathway inference using non-negative matrix factorization with community detection."](https://doi.org/10.1101/2020.05.27.119826)**, 10th International Conference on Computational Advances in Bio and medical Sciences (ICCABS), (2020).
 - M. A. Basher, Abdur Rahman and Hallam, Steven J.. **["Multi-label pathway prediction based on active dataset subsampling."](https://www.biorxiv.org/content/10.1101/2020.09.14.297424v1)**, bioRxiv (2020).
 - M. A. Basher, Abdur Rahman and Hallam, Steven J.. **["reMap: Relabeling Multi-label Pathway Data with Bags to Enhance Predictive Performance"](https://www.biorxiv.org/content/10.1101/2020.08.21.260109v1)**, bioRxiv (2020).
-- M. A. Basher, Abdur Rahman and Hallam, Steven J.. **["Modeling Metabolic Pathways as Bags (with Augmentation)."](https://arbasher.github.io/data/cbt.pdf)**, arXiv (2019).
+- M. A. Basher, Abdur Rahman. **["Modeling Metabolic Pathways as Groups (with Augmentation)."](https://arbasher.github.io/data/cbt.pdf)**, arXiv (2019).
 
 ## Contact
 

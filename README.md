@@ -1,5 +1,7 @@
 # Preprocess BioCyc files
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/207c2498474c41f9b7d03b805ca19ff5)](https://app.codacy.com/gh/arbasher/prepBioCyc?utm_source=github.com&utm_medium=referral&utm_content=arbasher/prepBioCyc&utm_campaign=Badge_Grade_Settings)
+
 ![BioCyc data preprocessing steps](prepBioCyc.png)
 
 ## Basic Description

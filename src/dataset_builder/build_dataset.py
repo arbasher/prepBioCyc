@@ -214,9 +214,9 @@ def __format_curated_dataset(num_samples, ptwy_ec_matrix, col_idx, col_id, row_i
                                 save_path=load_path)
 
     if minpath_map_file:
-        __map_labels2functions(row_data_matrix=ptwy_ec_matrix, col_postion_idx=col_idx, y=y, num_samples=num_samples,
-                               col_id=col_id, row_id=row_id, map_all=map_all, col_tag=col_tag, row_tag=row_tag,
-                               display_interval=display_interval, file_name=file_name, save_path=load_path)
+        __map_labels2functions(row_data_matrix=ptwy_ec_matrix, col_postion_idx=col_idx, col_id=col_id, row_id=row_id,
+                               col_tag=col_tag, row_tag=row_tag, display_interval=display_interval, file_name=file_name,
+                               save_path=load_path)
 
     file = file_name + '_X.pkl'
     save_data(data=X, file_name=file, save_path=load_path, mode='w+b', print_tag=False)
@@ -372,8 +372,8 @@ def build_golden_dataset(row_data_matrix, col_idx, col_id, row_id, kb_list, proc
                              file_name=file_name, load_path=save_path)
 
 
-def __map_labels2functions(row_data_matrix, col_postion_idx, y, num_samples, col_id, row_id, map_all=True, col_tag='ec',
-                           row_tag='pathway', display_interval=-1, file_name='ptw2ec.txt', save_path='.'):
+def __map_labels2functions(row_data_matrix, col_postion_idx, col_id, row_id, col_tag='ec', row_tag='pathway',
+                           display_interval=-1, file_name='ptw2ec.txt', save_path='.'):
     r_idx = reverse_idx(col_id)
     col_id = {}
     for idx in col_postion_idx:

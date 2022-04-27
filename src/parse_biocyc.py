@@ -67,17 +67,10 @@ def __parse_files(arg):
         row_id = data_object['pathway_id']
         col_tag = 'ec'
         col_id = data_object['ec_id']
-        if arg.construct_reaction:
-            row_tag = 'reaction'
-            row_id = data_object['reaction_id']
-        if not arg.use_ec:
-            col_tag = 'gene'
-            col_id = data_object['gene_name_id']
         file_name = row_tag + '2' + col_tag
-        dsb.__map_labels2functions(row_data_matrix=pathway2ec, col_postion_idx=pathway2ec_idx, y=None,
-                                   num_samples=arg.num_sample, col_id=col_id, row_id=row_id, map_all=arg.map_all,
-                                   col_tag=col_tag, row_tag=row_tag, display_interval=arg.display_interval,
-                                   file_name=file_name, save_path=arg.ospath)
+        dsb.__map_labels2functions(row_data_matrix=pathway2ec, col_postion_idx=pathway2ec_idx, col_id=col_id,
+                                   row_id=row_id, col_tag=col_tag, row_tag=row_tag,
+                                   display_interval=arg.display_interval, file_name=file_name, save_path=arg.ospath)
 
     ##########################################################################################################
     ################################          EXTRACTING PROPERTIES           ################################

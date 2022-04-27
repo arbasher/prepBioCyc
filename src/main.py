@@ -1,6 +1,6 @@
 __author__ = "Abdurrahman Abul-Basher"
-__date__ = '03/01/2019'
-__copyright__ = "Copyright 2019, The Hallam Lab"
+__date__ = '04/27/2022'
+__copyright__ = "Copyright 2022, The Hallam Lab"
 __license__ = "GPL"
 __version__ = "1.0"
 __maintainer__ = "Abdurrahman Abul-Basher"
@@ -10,7 +10,8 @@ __description__ = "This is the main entry to extract various information from Bi
 
 import datetime
 import json
-import os, sys
+import os
+import sys
 import textwrap
 from argparse import ArgumentParser
 
@@ -20,7 +21,7 @@ from utility.arguments import Arguments
 
 
 def __print_header():
-    if sys.platform.startswith('win'): 
+    if sys.platform.startswith('win'):
         os.system("cls")
     else:
         os.system("clear")
@@ -139,20 +140,20 @@ def parse_command_line():
 
     # Arguments for building data object and extracting features
     parser.add_argument('--build-biocyc-object', action='store_true', default=False,
-                        help='Whether to build reaction in the mapping process. '
-                             'process. (default value: False).')
+                        help='Whether to extract information from BioCyc collection. '
+                             '(default value: False).')
     parser.add_argument('--build-indicator', action='store_true', default=False,
                         help='Whether to build reaction in the mapping process. '
                              'process. (default value: False).')
     parser.add_argument('--build-pathway-properties', action='store_true', default=False,
-                        help='Whether to build reaction in the mapping process. '
-                             'process. (default value: False).')
+                        help='Whether to extract pathway properties. '
+                             '(default value: False).')
     parser.add_argument('--build-ec-properties', action='store_true', default=False,
-                        help='Whether to build reaction in the mapping process. '
-                             'process. (default value: False).')
+                        help='Whether to extract EC properties. '
+                             '(default value: False).')
     parser.add_argument('--build-pathway-similarities', action='store_true', default=False,
-                        help='Whether to build reaction in the mapping process. '
-                             'process. (default value: False).')
+                        help='Whether to build pathway similarity matrix. '
+                             '(default value: False).')
 
     # Arguments for graph preprocessing
     parser.add_argument('--build-graph', action='store_true', default=False,

@@ -41,7 +41,7 @@ For all experiments, navigate to ``src`` folder then run the commands of your ch
 prepBioCyc*"s running options use: `python main.py --help`. It should be self-contained. For a general usage execute the
 following command:
 
-``python main.py --build-biocyc-object --build-indicator --build-pathway-properties --build-ec-properties --build-pathway-similarities --build-graph --constraint-kb 'metacyc' --build-synset --ex-features-from-synset --build-golden-dataset --ex-features-from-golden-dataset --build-pathologic-input --build-minpath-dataset --minpath-map --kbpath "[path to database]" --ospath "[path to the object files (e.g. 'biocyc.pkl')]" --dspath "[path to dataset and to store results]" --display-interval --num-jobs 2``
+``python main.py --build-biocyc-object --build-indicator --build-pathway-properties --build-ec-properties --build-pathway-similarities --build-graph --constraint-kb 'metacyc' --build-synset --ex-features-from-synset --build-golden-dataset --ex-features-from-golden-dataset --build-pathologic-input --build-minpath-dataset --minpath-map --kbpath "[path to database]" --ospath "[path to the object files (e.g. 'biocyc.pkl')]" --dspath "[path to dataset and to store results]" --display-interval -1 --num-jobs 2``
 
 **Please obtain MetaCyc and other databases from [BioCyc](https://biocyc.org/).**
 
@@ -50,12 +50,23 @@ following command:
 If you find *prepBioCyc* useful in your research, please consider citing this repo and the following papers:
 
 - M. A. Basher, Abdur Rahman, McLaughlin, Ryan J., and Hallam, Steven
-  J.. **["Metabolic pathway inference using multi-label classification with rich pathway features."](https://doi.org/10.1371/journal.pcbi.1008174)**, PLoS Comput Biol (2020).
-- M. A. Basher, Abdur Rahman, and Hallam, Steven J.. **["Leveraging Heterogeneous Network Embedding for Metabolic Pathway Prediction"](https://doi.org/10.1093/bioinformatics/btaa906)**, Bioinformatics (2020).
-- M. A. Basher, Abdur Rahman, McLaughlin, Ryan J., and Hallam, Steven J.. **["Metabolic pathway inference using non-negative matrix factorization with community detection."](https://doi.org/10.1101/2020.05.27.119826)**, 10th International Conference on Computational Advances in Bio and medical Sciences (ICCABS), (2020).
-- M. A. Basher, Abdur Rahman and Hallam, Steven J.. **["Multi-label pathway prediction based on active dataset subsampling."](https://www.biorxiv.org/content/10.1101/2020.09.14.297424v1)**, bioRxiv (2020).
-- M. A. Basher, Abdur Rahman and Hallam, Steven J.. **["reMap: Relabeling Multi-label Pathway Data with Bags to Enhance Predictive Performance"](https://www.biorxiv.org/content/10.1101/2020.08.21.260109v1)**, bioRxiv (2020).
-- M. A. Basher, Abdur Rahman. **["Modeling Metabolic Pathways as Groups (with Augmentation)."](https://arbasher.github.io/data/cbt.pdf)**, arXiv (2019).
+  J.. **["Metabolic pathway inference using multi-label classification with rich pathway features."](https://doi.org/10.1371/journal.pcbi.1008174)**
+  , PLoS Comput Biol (2020).
+- M. A. Basher, Abdur Rahman, and Hallam, Steven
+  J.. **["Leveraging Heterogeneous Network Embedding for Metabolic Pathway Prediction"](https://doi.org/10.1093/bioinformatics/btaa906)**
+  , Bioinformatics (2020).
+- M. A. Basher, Abdur Rahman, McLaughlin, Ryan J., and Hallam, Steven
+  J.. **["Metabolic pathway inference using non-negative matrix factorization with community detection."](https://doi.org/10.1101/2020.05.27.119826)**
+  , 10th International Conference on Computational Advances in Bio and medical Sciences (ICCABS), (2020).
+- M. A. Basher, Abdur Rahman and Hallam, Steven
+  J.. **["Multi-label pathway prediction based on active dataset subsampling."](https://www.biorxiv.org/content/10.1101/2020.09.14.297424v1)**
+  , bioRxiv (2020).
+- M. A. Basher, Abdur Rahman and Hallam, Steven
+  J.. **["reMap: Relabeling Multi-label Pathway Data with Bags to Enhance Predictive Performance"](https://www.biorxiv.org/content/10.1101/2020.08.21.260109v1)**
+  , bioRxiv (2020).
+- M. A. Basher, Abdur
+  Rahman. **["Modeling Metabolic Pathways as Groups (with Augmentation)."](https://arbasher.github.io/data/cbt.pdf)**,
+  arXiv (2019).
 
 ## Contact
 
